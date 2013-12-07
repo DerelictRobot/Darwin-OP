@@ -2,8 +2,8 @@
 
 dir
 84
-https://darwinop.svn.sourceforge.net/svnroot/darwinop/trunk/darwin/Linux/project/tutorial/fsr/www
-https://darwinop.svn.sourceforge.net/svnroot/darwinop
+https://svn.code.sf.net/p/darwinop/code/trunk/darwin/Linux/project/tutorial/fsr/www
+https://svn.code.sf.net/p/darwinop/code
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2013-04-12T06:29:43.347109Z
+2013-12-05T21:24:20.824492Z
 713496289346a6c1c265f0e1f615ecd0
 2012-03-16T13:38:46.230923Z
 77
@@ -66,7 +66,7 @@ file
 
 
 
-2013-04-12T06:29:43.348107Z
+2013-12-05T21:24:20.825493Z
 f44cecab391610588755a8953d5a54f4
 2012-03-16T13:38:46.230923Z
 77
@@ -100,7 +100,7 @@ file
 
 
 
-2013-04-12T06:29:43.349109Z
+2013-12-05T21:24:20.825493Z
 fd6d41072c69d8d3613cee29090cd404
 2012-03-16T13:38:46.230923Z
 77
@@ -134,7 +134,7 @@ file
 
 
 
-2013-04-12T06:29:43.350108Z
+2013-12-05T21:24:20.827492Z
 f15ad11a5e7cf4d9adc22eab8326ab39
 2012-03-16T13:38:46.230923Z
 77

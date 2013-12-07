@@ -82,7 +82,7 @@ void ReadStep(CM730 *cm730)
 	int value;
 	for(int id=0; id<31; id++)
 	{
-		if(id >= JointData::ID_R_SHOULDER_PITCH && id <= JointData::ID_HEAD_TILT)
+		if(id >= JointData::ID_R_SHOULDER_PITCH && id <= JointData::ID_HEAD_ROLL)
 		{
 			if(cm730->ReadByte(id, MX28::P_TORQUE_ENABLE, &value, 0) == CM730::SUCCESS)
 			{
@@ -321,7 +321,14 @@ void DrawPage()
 	printf( "ID:18(L_ANK_ROLL) [    ]                                                       \n" );//7
 	printf( "ID:19(HEAD_PAN)   [    ]                                                       \n" );//8
 	printf( "ID:20(HEAD_TILT)  [    ]                                                       \n" );//9
-	printf( "   PauseTime      [    ]                                                       \n" );//0
+	printf( "ID:21(R_ELBOW_YAW)[    ]                                                       \n" );//0
+	printf( "ID:22(L_ELBOW_YAW)[    ]                                                       \n" );//1
+	printf( "ID:23(R_WRIST_YAW)[    ]                                                       \n" );//2
+	printf( "ID:24(L_WRIST_YAW)[    ]                                                       \n" );//3
+	printf( "ID:25(R_GRIPPER)  [    ]                                                       \n" );//4
+	printf( "ID:26(L_GRIPPER)  [    ]                                                       \n" );//5
+	printf( "ID:27(HEAD_ROLL)  [    ]                                                       \n" );//6
+	printf( "   PauseTime      [    ]                                                       \n" );//7
 
 	if( Page.header.schedule == Action::SPEED_BASE_SCHEDULE )
 		printf( "   Speed          [    ]                                                       \n" );//1
@@ -333,6 +340,7 @@ void DrawPage()
 
 	for(int i=0; i<=Action::MAXNUM_STEP; i++ )
 		DrawStep(i);
+
 
 	// Draw Compliance slope
 	for( int id=JointData::ID_R_SHOULDER_PITCH; id<JointData::NUMBER_OF_JOINTS; id++ )

@@ -1,29 +1,29 @@
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/svnroot/darwinop/!svn/ver/82/trunk/darwin/Linux/project/tutorial/action_script
+V 78
+/p/darwinop/code/!svn/ver/82/trunk/darwin/Linux/project/tutorial/action_script
 END
 config.ini
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/svnroot/darwinop/!svn/ver/3/trunk/darwin/Linux/project/tutorial/action_script/config.ini
+V 88
+/p/darwinop/code/!svn/ver/3/trunk/darwin/Linux/project/tutorial/action_script/config.ini
 END
 main.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/svnroot/darwinop/!svn/ver/81/trunk/darwin/Linux/project/tutorial/action_script/main.cpp
+V 87
+/p/darwinop/code/!svn/ver/81/trunk/darwin/Linux/project/tutorial/action_script/main.cpp
 END
 script.asc
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/svnroot/darwinop/!svn/ver/20/trunk/darwin/Linux/project/tutorial/action_script/script.asc
+V 89
+/p/darwinop/code/!svn/ver/20/trunk/darwin/Linux/project/tutorial/action_script/script.asc
 END
 Makefile
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/svnroot/darwinop/!svn/ver/82/trunk/darwin/Linux/project/tutorial/action_script/Makefile
+V 87
+/p/darwinop/code/!svn/ver/82/trunk/darwin/Linux/project/tutorial/action_script/Makefile
 END

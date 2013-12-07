@@ -2,8 +2,8 @@
 
 dir
 84
-https://darwinop.svn.sourceforge.net/svnroot/darwinop/trunk/darwin/Linux/project/walk_tuner
-https://darwinop.svn.sourceforge.net/svnroot/darwinop
+https://svn.code.sf.net/p/darwinop/code/trunk/darwin/Linux/project/walk_tuner
+https://svn.code.sf.net/p/darwinop/code
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2013-04-12T06:29:59.367113Z
+2013-12-05T21:24:21.242742Z
 9b87409b2b443c194a2e94f82c111a34
 2012-09-05T01:02:35.722537Z
 81
@@ -69,7 +69,7 @@ file
 
 
 
-2013-04-12T06:29:59.368110Z
+2013-12-05T21:24:21.243740Z
 f37ecd83ad9504c4fb6e3aefb708cfaa
 2012-09-05T01:02:35.722537Z
 81
@@ -103,7 +103,7 @@ file
 
 
 
-2013-04-12T06:29:59.369113Z
+2013-12-05T21:24:21.244740Z
 5cc2fcc7b256b8004dccd138c624b8bc
 2011-04-08T00:56:27.451080Z
 30
@@ -137,7 +137,7 @@ file
 
 
 
-2013-04-12T06:29:59.369113Z
+2013-12-05T21:24:21.245748Z
 74014db3cfea98bd8ac1ecda96edabdf
 2012-09-05T02:11:37.688579Z
 82

@@ -70,6 +70,27 @@ const char *GetIDString(int id)
 	case JointData::ID_HEAD_TILT:
 		return "HEAD_TILT";
 
+	case JointData::ID_HEAD_ROLL:
+		return "HEAD_ROLL";
+
+	case JointData::ID_R_ELBOW_YAW:
+		return "R_ELBOW_YAW";
+
+	case JointData::ID_L_ELBOW_YAW:
+		return "L_ELBOW_YAW";
+
+	case JointData::ID_R_WRIST_YAW:
+		return "R_WRIST_YAW";
+
+	case JointData::ID_L_WRIST_YAW:
+		return "L_WRIST_YAW";
+
+	case JointData::ID_R_GRIPPER:
+		return "R_GRIPPER";
+
+	case JointData::ID_L_GRIPPER:
+		return "L_GRIPPER";
+
 	case CM730::ID_CM:
 		return "SUB_BOARD";
 	}

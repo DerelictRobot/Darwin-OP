@@ -2,8 +2,8 @@
 
 dir
 84
-https://darwinop.svn.sourceforge.net/svnroot/darwinop/trunk/darwin/Framework/src/minIni
-https://darwinop.svn.sourceforge.net/svnroot/darwinop
+https://svn.code.sf.net/p/darwinop/code/trunk/darwin/Framework/src/minIni
+https://svn.code.sf.net/p/darwinop/code
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2013-04-12T06:30:14.515357Z
+2013-12-05T21:18:06.098493Z
 416ecada2094bb09b0ab3f37e62ff529
 2011-02-16T05:53:17.953343Z
 3
@@ -66,7 +66,7 @@ file
 
 
 
-2013-04-12T06:30:14.516356Z
+2013-12-05T21:18:06.100491Z
 eb21481ad45c5578ae8c8d37b8c8d76d
 2011-02-16T05:53:17.953343Z
 3
@@ -100,7 +100,7 @@ file
 
 
 
-2013-04-12T06:30:14.517357Z
+2013-12-05T21:18:06.102491Z
 638615167a04706f7f2ae57fa9cb3aab
 2011-02-16T05:53:17.953343Z
 3
@@ -134,7 +134,7 @@ file
 
 
 
-2013-04-12T06:30:14.517357Z
+2013-12-05T21:18:06.103492Z
 8d04632c1a10d2337c4d43cffec9fe4a
 2011-02-16T05:53:17.953343Z
 3
@@ -168,7 +168,7 @@ file
 
 
 
-2013-04-12T06:30:14.518356Z
+2013-12-05T21:18:06.104490Z
 83c216fecc6df919a71597eb237bdec4
 2011-02-16T05:53:17.953343Z
 3
@@ -202,7 +202,7 @@ file
 
 
 
-2013-04-12T06:30:14.698357Z
+2013-12-05T21:18:06.105489Z
 f515e024dcede2662e5cec16febdade0
 2011-02-16T05:53:17.953343Z
 3

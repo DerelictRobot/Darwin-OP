@@ -2,8 +2,8 @@
 
 dir
 84
-https://darwinop.svn.sourceforge.net/svnroot/darwinop/trunk/darwin/Linux/project/tutorial/read_write
-https://darwinop.svn.sourceforge.net/svnroot/darwinop
+https://svn.code.sf.net/p/darwinop/code/trunk/darwin/Linux/project/tutorial/read_write
+https://svn.code.sf.net/p/darwinop/code
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2013-04-12T06:29:43.055360Z
+2013-12-05T21:24:20.629495Z
 b7ec60745df76281d49cf9e609439219
 2012-02-28T04:58:04.022698Z
 76
@@ -66,7 +66,7 @@ file
 
 
 
-2013-04-12T06:29:43.056360Z
+2013-12-05T21:24:20.630493Z
 ccb6046cc910c2172eb4717fb22be78f
 2013-02-20T08:09:14.812332Z
 83

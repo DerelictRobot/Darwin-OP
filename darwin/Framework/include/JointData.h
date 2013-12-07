@@ -36,6 +36,13 @@ namespace Robot
 			ID_L_ANKLE_ROLL         = 18,
 			ID_HEAD_PAN             = 19,
 			ID_HEAD_TILT            = 20,
+			ID_R_ELBOW_YAW		= 21,
+			ID_L_ELBOW_YAW		= 22,
+			ID_R_WRIST_YAW		= 23,
+			ID_L_WRIST_YAW		= 24,
+			ID_R_GRIPPER		= 25,
+			ID_L_GRIPPER		= 26,
+			ID_HEAD_ROLL		= 27,
 			NUMBER_OF_JOINTS
 		};
 

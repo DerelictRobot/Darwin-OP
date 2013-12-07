@@ -2,8 +2,8 @@
 
 dir
 84
-https://darwinop.svn.sourceforge.net/svnroot/darwinop/trunk/darwin/Framework/src/motion/modules
-https://darwinop.svn.sourceforge.net/svnroot/darwinop
+https://svn.code.sf.net/p/darwinop/code/trunk/darwin/Framework/src/motion/modules
+https://svn.code.sf.net/p/darwinop/code
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2013-04-12T06:30:14.765358Z
+2013-12-05T21:18:06.151495Z
 954a81623e23416eb4f89c26c79cb0a7
 2011-04-29T07:26:47.512052Z
 48
@@ -66,7 +66,7 @@ file
 
 
 
-2013-04-12T06:30:14.767358Z
+2013-12-05T21:18:06.152489Z
 d2ec38529b4672b408b24517393b85b7
 2011-05-26T05:01:28.706590Z
 64
@@ -100,7 +100,7 @@ file
 
 
 
-2013-04-12T06:30:14.768359Z
+2013-12-05T21:18:06.153488Z
 0b8e15328975f4c709f5708de5498b3a
 2013-04-12T00:56:24.163377Z
 84

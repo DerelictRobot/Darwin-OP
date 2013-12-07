@@ -2,8 +2,8 @@
 
 dir
 84
-https://darwinop.svn.sourceforge.net/svnroot/darwinop/trunk/darwin/Linux/project/tutorial/ball_following
-https://darwinop.svn.sourceforge.net/svnroot/darwinop
+https://svn.code.sf.net/p/darwinop/code/trunk/darwin/Linux/project/tutorial/ball_following
+https://svn.code.sf.net/p/darwinop/code
 
 
 
@@ -35,7 +35,7 @@ file
 
 
 
-2013-04-12T06:29:43.190358Z
+2013-12-05T21:24:20.768492Z
 b89ad25d1b7750c1153f4e90c56edbb4
 2012-09-05T01:02:35.722537Z
 81
@@ -69,7 +69,7 @@ file
 
 
 
-2013-04-12T06:29:43.191358Z
+2013-12-05T21:24:20.769490Z
 160793b50b2bbf4194e6e416c6177a21
 2012-09-05T02:11:37.688579Z
 82

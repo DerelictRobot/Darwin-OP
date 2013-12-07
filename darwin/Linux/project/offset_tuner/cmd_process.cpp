@@ -26,7 +26,7 @@ int I_Gain[JointData::NUMBER_OF_JOINTS];
 int D_Gain[JointData::NUMBER_OF_JOINTS];
 
 //                           1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20
-int InitPose[21] = {2047, 1480, 2610, 1747, 2343, 2147, 1944, 2047, 2047, 2047, 2047, 2013, 2080, 2047, 2047, 2063, 2030, 2047, 2047, 2047, 2170};
+int InitPose[28] = {2047, 1480, 2610, 1747, 2343, 2147, 1944, 2047, 2047, 2047, 2047, 2013, 2080, 2047, 2047, 2063, 2030, 2047, 2047, 2047, 2170, 2047, 2047, 2047, 2047, 2047, 2047, 2047};
 
 int _getch()
 {
@@ -89,7 +89,7 @@ void ReadStep(CM730 *cm730)
 	int value;
 	for(int id=0; id<31; id++)
 	{
-		if(id >= JointData::ID_R_SHOULDER_PITCH && id <= JointData::ID_HEAD_TILT)
+		if(id >= JointData::ID_R_SHOULDER_PITCH && id <= JointData::ID_HEAD_ROLL)
 		{
 			if(cm730->ReadByte(id, MX28::P_TORQUE_ENABLE, &value, 0) == CM730::SUCCESS)
 			{
@@ -269,7 +269,7 @@ void DrawIntro(CM730 *cm730)
 
 	system("clear");
 	printf("\n");
-	printf("[Offset Tuner for DARwIn %s]\n", PROGRAM_VERSION);
+	printf("[Offset Tuner for Jimmy! %s]\n", PROGRAM_VERSION);
 	printf("\n");
 	printf(" *Terminal screen size must be %d(col)x%d(row).\n", SCREEN_COL, SCREEN_ROW);
     printf(" *Current terminal has %d columns and %d rows.\n", ncolumns, nrows);
@@ -322,8 +322,15 @@ void DrawPage()
     printf( "ID:18(L_ANK_ROLL)   [    ]        [    ]|                                      \n" );//7
     printf( "ID:19(HEAD_PAN)     [    ]        [    ]|                                      \n" );//8
     printf( "ID:20(HEAD_TILT)    [    ]        [    ]|                                      \n" );//9
-    printf( "                     GOAL  OFFSET MODVAL PRSPOS ERRORS P_GAIN I_GAIN D_GAIN    \n" );//0
-    printf( "]                                                                              " );  //1
+    printf( "ID:21(R_ELBOW_YAW)  [    ]        [    ]|                                      \n" );//0
+    printf( "ID:22(L_ELBOW_YAW)  [    ]        [    ]|                                      \n" );//1
+    printf( "ID:23(R_WRIST_YAW)  [    ]        [    ]|                                      \n" );//2
+    printf( "ID:24(L_WRIST_YAW)  [    ]        [    ]|                                      \n" );//3
+    printf( "ID:25(R_GRIPPER)    [    ]        [    ]|                                      \n" );//4
+    printf( "ID:26(L_GRIPPER)    [    ]        [    ]|                                      \n" );//5
+    printf( "ID:27(HEAD_ROLL)    [    ]        [    ]|                                      \n" );//6
+    printf( "                     GOAL  OFFSET MODVAL PRSPOS ERRORS P_GAIN I_GAIN D_GAIN    \n" );//7
+    printf( "]                                                                              " );  //8
 
 	for(int i=0; i<=7; i++ )
 		DrawStep(i);

@@ -2,8 +2,8 @@
 
 dir
 84
-https://darwinop.svn.sourceforge.net/svnroot/darwinop/trunk/darwin/Framework/doc
-https://darwinop.svn.sourceforge.net/svnroot/darwinop
+https://svn.code.sf.net/p/darwinop/code/trunk/darwin/Framework/doc
+https://svn.code.sf.net/p/darwinop/code
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2013-04-12T06:30:14.473358Z
+2013-12-05T21:18:05.762494Z
 863d4e5bd73da299ff3c58b51f64c3c2
 2011-02-16T05:53:17.953343Z
 3

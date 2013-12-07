@@ -5,9 +5,9 @@
 #include "LinuxDARwIn.h"
 
 
-#define PROGRAM_VERSION		"v1.00"
+#define PROGRAM_VERSION		"v1.01"
 #define SCREEN_COL			80
-#define SCREEN_ROW			24
+#define SCREEN_ROW			31
 
 // Position of Column
 #define CMD_COL			2
@@ -20,11 +20,11 @@
 #define STP5_COL		50
 #define STP6_COL		55
 #define CWSLOPE_COL		60
-#define CCWSLOPE_COL	61
+#define CCWSLOPE_COL		61
 #define NAME_COL		63
 #define ADDR_COL		72
 #define PAGENUM_COL		75
-#define PAGEPARAM_COL	76
+#define PAGEPARAM_COL		76
 
 // Position of Row
 #define ID_1_ROW	0
@@ -47,15 +47,25 @@
 #define ID_18_ROW	17
 #define ID_19_ROW	18
 #define ID_20_ROW	19
-#define PAUSE_ROW	20
-#define SPEED_ROW	21
-#define CMD_ROW		23
+
+#define ID_21_ROW	20
+#define ID_22_ROW	21
+#define ID_23_ROW	22
+#define ID_24_ROW	23
+#define ID_25_ROW	24
+#define ID_26_ROW	25
+#define ID_27_ROW	26
+
+#define PAUSE_ROW	27
+#define SPEED_ROW	28
+#define CMD_ROW		30
+
 #define NAME_ROW		0
 #define PAGENUM_ROW		1
 #define ADDR_ROW		2
-#define PLAYCOUNT_ROW	3
+#define PLAYCOUNT_ROW		3
 #define STEPNUM_ROW		4
-#define PLAYSPEED_ROW	5
+#define PLAYSPEED_ROW		5
 #define ACCEL_ROW		6
 #define NEXT_ROW		7
 #define EXIT_ROW		8

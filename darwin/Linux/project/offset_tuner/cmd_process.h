@@ -5,9 +5,9 @@
 #include "LinuxDARwIn.h"
 
 
-#define PROGRAM_VERSION		"v1.00"
+#define PROGRAM_VERSION		"v1.01"
 #define SCREEN_COL			80
-#define SCREEN_ROW			22
+#define SCREEN_ROW			29
 
 // Position of Column
 #define CMD_COL			2
@@ -42,7 +42,16 @@
 #define ID_18_ROW	17
 #define ID_19_ROW	18
 #define ID_20_ROW	19
-#define CMD_ROW		21
+
+#define ID_21_ROW	20
+#define ID_22_ROW	21
+#define ID_23_ROW	22
+#define ID_24_ROW	23
+#define ID_25_ROW	24
+#define ID_26_ROW	25
+#define ID_27_ROW	26
+
+#define CMD_ROW		28
 
 
 int _getch();

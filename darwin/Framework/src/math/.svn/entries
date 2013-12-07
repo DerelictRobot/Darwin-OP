@@ -2,8 +2,8 @@
 
 dir
 84
-https://darwinop.svn.sourceforge.net/svnroot/darwinop/trunk/darwin/Framework/src/math
-https://darwinop.svn.sourceforge.net/svnroot/darwinop
+https://svn.code.sf.net/p/darwinop/code/trunk/darwin/Framework/src/math
+https://svn.code.sf.net/p/darwinop/code
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2013-04-12T06:30:15.708358Z
+2013-12-05T21:18:06.242746Z
 a9610f186c5a425713620446beba4f50
 2011-02-16T05:53:17.953343Z
 3
@@ -66,7 +66,7 @@ file
 
 
 
-2013-04-12T06:30:15.708358Z
+2013-12-05T21:18:06.243740Z
 529ef35e6d29f635d3fcf95a2cbee70a
 2011-02-16T05:53:17.953343Z
 3
@@ -100,7 +100,7 @@ file
 
 
 
-2013-04-12T06:30:15.709358Z
+2013-12-05T21:18:06.244739Z
 639c6dd78f16d4e63aa7676b43d51fa4
 2011-02-16T05:53:17.953343Z
 3
@@ -134,7 +134,7 @@ file
 
 
 
-2013-04-12T06:30:15.710358Z
+2013-12-05T21:18:06.244739Z
 a3c27485f2b36fd04a9cf797629e4cfa
 2011-02-16T05:53:17.953343Z
 3
