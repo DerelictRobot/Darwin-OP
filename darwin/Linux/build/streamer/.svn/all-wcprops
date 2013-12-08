@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/darwinop/code/!svn/ver/74/trunk/darwin/Linux/build/streamer
+END
+mjpg_streamer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/darwinop/code/!svn/ver/3/trunk/darwin/Linux/build/streamer/mjpg_streamer.cpp
+END
+httpd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/darwinop/code/!svn/ver/74/trunk/darwin/Linux/build/streamer/httpd.cpp
+END
+mjpg_streamer.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/darwinop/code/!svn/ver/3/trunk/darwin/Linux/build/streamer/mjpg_streamer.h
+END
+jpeg_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/darwinop/code/!svn/ver/3/trunk/darwin/Linux/build/streamer/jpeg_utils.cpp
+END
+httpd.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/darwinop/code/!svn/ver/71/trunk/darwin/Linux/build/streamer/httpd.h
+END
+jpeg_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/darwinop/code/!svn/ver/3/trunk/darwin/Linux/build/streamer/jpeg_utils.h
+END
