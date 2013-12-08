@@ -307,6 +307,8 @@ void MotionManager::Process()
 
             if(DEBUG_PRINT == true)
                 fprintf(stderr, "ID[%d] : %d \n", id, MotionStatus::m_CurrentJoints.GetValue(id));
+		fprintf(stderr, "Enable[%d] : %d \n", id, MotionStatus::m_CurrentJoints.GetEnable(id));
+
         }
 
         if(joint_num > 0)

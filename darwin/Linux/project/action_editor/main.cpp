@@ -264,7 +264,7 @@ int main(int argc, char *argv[])
                         if(num_param > 0)
                             GoCmd(&cm730, iparam[0]);
                         else
-                            PrintCmd("Need parameter");
+                            PrintCmd("Need step number");
                     }
                     else if(strcmp(cmd, "save") == 0)
                         SaveCmd();

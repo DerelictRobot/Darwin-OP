@@ -780,7 +780,7 @@ void OnOffCmd(CM730 *cm730, bool on, int num_param, int *list)
 	{
 		for(int i=0; i<num_param; i++)
 		{
-			if(list[i] >= JointData::ID_R_SHOULDER_PITCH && list[i] <= JointData::ID_HEAD_TILT)
+			if(list[i] >= JointData::ID_R_SHOULDER_PITCH && list[i] <= JointData::NUMBER_OF_JOINTS)
 				cm730->WriteByte(list[i], MX28::P_TORQUE_ENABLE, (int)on, 0);
 		}
 	}

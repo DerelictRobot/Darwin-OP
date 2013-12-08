@@ -5,14 +5,17 @@ https://svn.code.sf.net/p/darwinop/code/trunk/darwin
 launch UI w/ root
 gksudo nautilus
 
+root pw: 111111
+
 ########################################
 
 Startup script found here:
 /etc/rc.local
 
 ########################################
+Changes to framework need to have Linux/build make clean'd
 
-
+Build from project/ directories, make clean && make
 
 ###################################
 CM-730 -
@@ -26,7 +29,8 @@ Bounding Box:
 35 height
 
 ###################################
-To add servos, you need to reconfigure god damned everything. 
+MotionManager.cpp handles servo writes
+Action.cpp is on 125hz timer, handles interpolation
 
 #######################################
 JOINTDATA
@@ -41,9 +45,9 @@ Line 68:
 	SetEnable(ID_R_WRIST_YAW,	enable, exclusive);
 	SetEnable(ID_R_GRIPPER,		enable, exclusive);
 Line 83:
-	SetEnable(ID_R_ELBOW_YAW, 	enable, exclusive);
-	SetEnable(ID_R_WRIST_YAW,	enable, exclusive);
-	SetEnable(ID_R_GRIPPER,		enable, exclusive);
+	SetEnable(ID_L_ELBOW_YAW, 	enable, exclusive);
+	SetEnable(ID_L_WRIST_YAW,	enable, exclusive);
+	SetEnable(ID_L_GRIPPER,		enable, exclusive);
 
 Config Servo IDs/Name here:
 
@@ -83,13 +87,27 @@ Added:
 ACTION_EDITOR
 ############################################################
 
+
+g calls GoCmd (cmd_process.cpp)
+
+play calls PlayCmd
+
+
 action_editor also needs an update to recognize new servos.
+
+(does not move servos at ID 20+ currently)
 
 Have to update /Linux/project/action_editor/cmd_process.cpp
 
 // change ID_HEAD_TILT to last servo ID name
 
 line 85:  if(id >= JointData::ID_R_SHOULDER_PITCH && id <= JointData::ID_HEAD_ROLL)
+
+line 1134:  
+			if(list[i] >= JointData::ID_R_SHOULDER_PITCH && list[i] <= JointData::NUMBER_OF_JOINTS)
+
+
+
 
 Update DrawPage....
 
@@ -180,8 +198,7 @@ void DrawPage()
 	GoToCursor(old_col, old_row);
 }
 
-Oh god, everything is broken. Compare vs stock code. 
-Fixed?
+
 
 Have to update /Linux/project/action_editor/cmd_process.h
 
@@ -211,7 +228,7 @@ Have to update /Linux/project/action_editor/cmd_process.h
 
 offset_tuner also needs an update to recognize new servos. (very similar to action_editor)
 
-CANNOT SCROLL DOWN CURSOR PAST ROW 20
+CANNOT SCROLL DOWN CURSOR PAST ROW 20, saving ID 28 to config?
 
 
 Have to update /Linux/project/offset_tuner/cmd_process.cpp
@@ -291,3 +308,10 @@ Line 45:
 
  Press any key to continue...
 ##############################################################
+
+
+Debugging in MotionManager.cpp
+
+Line 310/311
+//		fprintf(stderr, "Enable[%d] : %d \n", id, MotionStatus::m_CurrentJoints.GetEnable(id));
+                fprintf(stderr, "Enable[%d] : %d \n", id, Action::GetInstance()->m_Joint.GetEnable(id));

@@ -12,17 +12,17 @@
 using namespace Robot;
 
 
-#define ID					(2)
+#define ID				(2)
 #define LENGTH				(3)
 #define INSTRUCTION			(4)
 #define ERRBIT				(4)
 #define PARAMETER			(5)
-#define DEFAULT_BAUDNUMBER	(1)
+#define DEFAULT_BAUDNUMBER		(1)
 
 #define INST_PING			(1)
 #define INST_READ			(2)
 #define INST_WRITE			(3)
-#define INST_REG_WRITE		(4)
+#define INST_REG_WRITE			(4)
 #define INST_ACTION			(5)
 #define INST_RESET			(6)
 #define INST_SYNC_WRITE		(131)   // 0x83
@@ -68,7 +68,7 @@ CM730::~CM730()
 	Disconnect();
 }
 
-int CM730::TxRxPacket(unsigned char *txpacket, unsigned char *rxpacket, int priority)
+int __attribute__((optimize("O0"))) CM730::TxRxPacket(unsigned char *txpacket, unsigned char *rxpacket, int priority)
 {
 	if(priority > 1)
 		m_Platform->LowPriorityWait();

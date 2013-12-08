@@ -156,7 +156,7 @@ void MoveDownCursor()
 	}
 	else if(Col <= CCWSLOPE_COL)
 	{
-		if( Row < ID_20_ROW )
+		if( Row < ID_27_ROW )
 			GoToCursor(Col, Row+1);
 	}
 	else
@@ -845,7 +845,7 @@ void SetValue(CM730 *cm730, int value)
 
 void ToggleTorque(CM730 *cm730)
 {
-	if(Col != STP7_COL || Row > ID_20_ROW)
+	if(Col != STP7_COL || Row > ID_27_ROW)
 		return;
 
 	int id = Row + 1;
@@ -995,11 +995,13 @@ void PlayCmd(CM730 *cm730, Robot::LinuxMotionTimer *timer)
 			{
 				if(cm730->ReadWord(id, MX28::P_PRESENT_POSITION_L, &value, 0) == CM730::SUCCESS)
 					MotionStatus::m_CurrentJoints.SetValue(id, value);
+//			                fprintf(stderr, "Enable[%d] : %d \n", id, Action::GetInstance()->m_Joint.GetEnable(id));
 			}
 			else
 			{
 				if(cm730->ReadWord(id, MX28::P_GOAL_POSITION_L, &value, 0) == CM730::SUCCESS)
 					MotionStatus::m_CurrentJoints.SetValue(id, value);
+//                                        fprintf(stderr, "Enable[%d] : %d \n", id, Action::GetInstance()->m_Joint.GetEnable(id));
 			}
 		}
 	}
@@ -1131,7 +1133,7 @@ void OnOffCmd(CM730 *cm730, bool on, int num_param, int *list)
 	{
 		for(int i=0; i<num_param; i++)
 		{
-			if(list[i] >= JointData::ID_R_SHOULDER_PITCH && list[i] <= JointData::ID_HEAD_TILT)
+			if(list[i] >= JointData::ID_R_SHOULDER_PITCH && list[i] <= JointData::NUMBER_OF_JOINTS)
 				cm730->WriteByte(list[i], MX28::P_TORQUE_ENABLE, (int)on, 0);
 		}
 	}
