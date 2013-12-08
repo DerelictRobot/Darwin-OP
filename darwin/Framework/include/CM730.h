@@ -10,7 +10,7 @@
 
 #include "MX28.h"
 
-#define MAXNUM_TXPARAM      (512)
+#define MAXNUM_TXPARAM      (256)
 #define MAXNUM_RXPARAM      (1024)
 
 namespace Robot
